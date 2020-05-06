@@ -1,5 +1,11 @@
 package com.example.etracker.Dao;
 
 public interface Etracker_Dao {
+  
+  public Map<String, java.lang.Object> graph1(int uSER_ID);
+	public Map<String, java.lang.Object> graph2(int uSER_ID);
+	public Collection<Map<String,java.lang.Object>>  graph3(int uSER_ID);
+	public Collection<Map<String,java.lang.Object>> graph4(int uSER_ID);
+
 
 }
