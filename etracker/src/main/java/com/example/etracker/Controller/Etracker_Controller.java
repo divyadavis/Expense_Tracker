@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Etracker_Controller {
 	
 	@Autowired
-	private ExpTrackService exp;
+	private Etracker_Service exp;
 	
 	@GetMapping("/TotalExpenseTotalIncomeBar_year")
 	public Map<String, java.lang.Object> graph1(@RequestParam int uSER_ID ){
