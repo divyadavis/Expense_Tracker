@@ -23,6 +23,17 @@ public class Etracker_ServiceImpl implements Etracker_Service{
 	public Collection<Map<String,java.lang.Object>> graph4(int uSER_ID){
 		return epTrackDao.graph4(uSER_ID);
 	}
+		public Collection<Map<String, Object>> getIncome(int uSER_ID) {
+		return epTrackDao.getIncome(uSER_ID);
+	}
+
+	public Collection<Map<String, Object>> getExpense(int uSER_ID) {
+		return epTrackDao.getExpense(uSER_ID);
+	}
+
+	public Collection<Map<String, Object>> getIncomeExpense(int uSER_ID) {
+		return epTrackDao.getIncomeExpense(uSER_ID);
+	}
 
 	
 }
